@@ -1,11 +1,6 @@
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
-import {
-  CssBaseline,
-  GlobalStyles,
-  ThemeProvider,
-  Typography,
-} from '@mui/material'
+import { CssBaseline, GlobalStyles, ThemeProvider } from '@mui/material'
 import theme from '../theme'
 import { globalStyles } from '../global-styles'
 
@@ -13,7 +8,6 @@ import '@fontsource/comfortaa/300.css'
 import '@fontsource/comfortaa/400.css'
 import '@fontsource/comfortaa/500.css'
 import '@fontsource/comfortaa/700.css'
-import React from 'react'
 
 function App({ Component, pageProps }: AppProps) {
   return (
