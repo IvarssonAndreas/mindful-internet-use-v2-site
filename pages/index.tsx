@@ -18,7 +18,7 @@ const Home: NextPage = () => {
           borderTop: '4px solid',
           borderColor: 'primary.main',
           background:
-            'linear-gradient(90.02deg, #202040 4.92%, #002042 36.46%, #002347  61.97%, #002752 99.98%)',
+            'linear-gradient(90.02deg, #002040 4.92%, #002042 36.46%, #002347  61.97%, #002752 99.98%)',
           minHeight: '100%',
           display: 'flex',
           alignItems: 'center',
