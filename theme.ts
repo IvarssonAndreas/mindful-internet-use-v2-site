@@ -33,7 +33,14 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: ['comfortaa', 'Arial', 'sans-serif'].join(','),
+    fontFamily: [
+      'comfortaa',
+      'futura',
+      'Roboto',
+      '"Helvetica Neue"',
+      'Arial',
+      'sans-serif',
+    ].join(','),
   },
 })
 
