@@ -33,25 +33,7 @@ const theme = createTheme({
     },
   },
   typography: {
-    h1: {
-      fontFamily: 'Comfortaa',
-    },
-    h2: {
-      fontFamily: 'Comfortaa',
-    },
-    fontFamily: [
-      'comfortaa',
-      '-apple-system',
-      'BlinkMacSystemFont',
-      '"Segoe UI"',
-      'Roboto',
-      '"Helvetica Neue"',
-      'Arial',
-      'sans-serif',
-      '"Apple Color Emoji"',
-      '"Segoe UI Emoji"',
-      '"Segoe UI Symbol"',
-    ].join(','),
+    fontFamily: ['comfortaa', 'Arial', 'sans-serif'].join(','),
   },
 })
 
