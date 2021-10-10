@@ -1,5 +1,6 @@
 import {
   Box,
+  CircularProgress,
   FormHelperText,
   InputLabel,
   Stack,
@@ -30,10 +31,6 @@ export const FeedbackForm: () => JSX.Element = () => {
     })
   }
 
-  if (status === 'loading') {
-    return <CardWrapper height={581} />
-  }
-
   if (status === 'ok') {
     return (
       <CardWrapper height={581}>
@@ -49,10 +46,9 @@ export const FeedbackForm: () => JSX.Element = () => {
             component={'h2'}
             sx={{
               animation: `${fadeIn} 1.5s  ease-in-out`,
-              fontWeight: 700,
-              fontSize: 26,
+              fontSize: 36,
             }}
-            color={'primary:'}
+            color={'primary.main'}
           >
             Thank{' '}
             <Box color={'secondary.contrastText'} component={'span'}>
@@ -203,9 +199,19 @@ export const FeedbackForm: () => JSX.Element = () => {
             />
           </Box>
 
+          {status === 'error' ? (
+            <FormHelperText
+              sx={{ color: 'error.main', fontSize: 16 }}
+              role="alert"
+              color={'error'}
+            >
+              Something went wrong, please try again
+            </FormHelperText>
+          ) : null}
+
           {status === 'feedbackRequired' ? (
             <FormHelperText
-              sx={{ color: 'error.main' }}
+              sx={{ color: 'error.main', fontSize: 16 }}
               role="alert"
               color={'error'}
             >
@@ -213,23 +219,27 @@ export const FeedbackForm: () => JSX.Element = () => {
             </FormHelperText>
           ) : null}
 
-          <Box sx={{ textAlign: 'right' }}>
-            <Button
-              type={'submit'}
-              color="primary"
-              variant={'contained'}
-              sx={{
-                color: 'secondary.main',
-                lineHeight: 0.8,
-                padding: '12px 40px',
-                fontWeight: 'bold',
-                borderRadius: '8px',
-                boxShadow: 1,
-              }}
-            >
-              Send{' '}
-            </Button>
-          </Box>
+          {status !== 'loading' ? (
+            <Box sx={{ textAlign: 'right' }}>
+              <Button
+                type={'submit'}
+                color="primary"
+                variant={'contained'}
+                sx={{
+                  padding: '8px 40px',
+                  fontWeight: 'bold',
+                  borderRadius: '8px',
+                  boxShadow: 1,
+                }}
+              >
+                Send
+              </Button>
+            </Box>
+          ) : (
+            <Box>
+              <CircularProgress />
+            </Box>
+          )}
         </Stack>
       </Stack>
     </CardWrapper>
