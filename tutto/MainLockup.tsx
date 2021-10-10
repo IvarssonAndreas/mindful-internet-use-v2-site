@@ -1,14 +1,21 @@
 import React from 'react'
-import { Box, Stack, Typography } from '@mui/material'
+import { Box, Typography } from '@mui/material'
 import { Rating } from '@Rating'
 import { TryoutButton } from '@TryoutButton'
 
 export const MainLockup = () => {
   return (
-    <Stack spacing={0}>
-      <Stack spacing={1} marginBottom={2}>
-        <Typography variant={'h6'}>Under development</Typography>
-        <Typography variant={'h3'} fontWeight="700" component="h1">
+    <Box>
+      <Box marginBottom={2}>
+        <Typography marginBottom={1} variant={'h6'}>
+          Under development
+        </Typography>
+        <Typography
+          marginBottom={1}
+          variant={'h3'}
+          fontWeight="700"
+          component="h1"
+        >
           <Box component={'span'} color={'#FFBE7B'}>
             Mindful{' '}
           </Box>
@@ -21,15 +28,15 @@ export const MainLockup = () => {
         <Typography variant={'h6'} component={'h2'}>
           A Chrome Extension that prevents mindless browsing
         </Typography>
-      </Stack>
+      </Box>
 
-      <Stack spacing={2} paddingTop={4}>
-        <Box>
-          <TryoutButton />
-        </Box>
+      <Box>
+        <TryoutButton />
+      </Box>
 
+      <Box marginTop={2}>
         <Rating />
-      </Stack>
-    </Stack>
+      </Box>
+    </Box>
   )
 }
