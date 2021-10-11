@@ -147,7 +147,7 @@ export const FeedbackForm: () => JSX.Element = () => {
             sx={{ color: 'secondary.light' }}
             id="feedback-helper"
           >
-            Nothing is to small
+            Nothing is too small
           </FormHelperText>
           <TextField
             variant={'filled'}
