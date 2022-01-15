@@ -3,10 +3,8 @@ import Head from 'next/head'
 import { CssBaseline, GlobalStyles, ThemeProvider } from '@mui/material'
 import theme from '../theme'
 import { globalStyles } from '../global-styles'
+import 'fonts.css'
 
-import "@fontsource/comfortaa/400.css";
-import "@fontsource/comfortaa/400.css";
-import "@fontsource/comfortaa/700.css";
 
 function App({ Component, pageProps }: AppProps) {
   return (
