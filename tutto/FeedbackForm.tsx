@@ -151,8 +151,7 @@ export const FeedbackForm: () => JSX.Element = () => {
           </FormHelperText>
           <TextField
             variant={'filled'}
-            minRows={8}
-            maxRows={8}
+            rows={8}
             placeholder="I think that..."
             sx={{
               width: '100%',
@@ -201,7 +200,7 @@ export const FeedbackForm: () => JSX.Element = () => {
 
         {status === 'feedbackRequired' ? (
           <FormHelperText
-            sx={{ color: 'error.main', fontSize: 16 }}
+            sx={{ color: 'error.main', fontSize: 14, mt: 1 }}
             role="alert"
             color={'error'}
           >
