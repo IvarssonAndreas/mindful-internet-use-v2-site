@@ -215,7 +215,8 @@ export const FeedbackForm: () => JSX.Element = () => {
               color="primary"
               variant={'contained'}
               sx={{
-                padding: '8px 40px',
+                height: '40px',
+                width: '122px',
                 fontWeight: 'bold',
                 borderRadius: '8px',
                 boxShadow: 1,
