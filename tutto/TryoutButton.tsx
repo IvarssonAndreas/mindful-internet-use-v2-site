@@ -11,7 +11,8 @@ export const TryoutButton = () => {
       color="primary"
       variant={'outlined'}
       sx={{
-        padding: '11px 38px',
+        width: '166px',
+        height: '49px',
         borderRadius: '8px',
         boxShadow: 1,
       }}
