@@ -8,6 +8,19 @@ const { withSentryConfig } = require('@sentry/nextjs')
 const moduleExports = {
   // Your existing module.exports
   reactStrictMode: true,
+  async headers() {
+    return [
+      {
+        source: '/fonts/:version/:font',
+        headers: [
+          {
+            key: 'Cache-control',
+            value: 'public, immutable, max-age=31536000',
+          },
+        ],
+      },
+    ]
+  },
 }
 
 const SentryWebpackPluginOptions = {
