@@ -16,7 +16,7 @@ function App({ Component, pageProps }: AppProps) {
         <meta
           name="description"
           content="A Chrome Extension that prevents mindless browsing"
-        />
+        />`
         <link
           rel="apple-touch-icon"
           sizes="180x180"

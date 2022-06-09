@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import { firestore } from 'tutto/firebaseAdmin'
-import { withSentry } from '@sentry/nextjs'
+
 
 const feedback = async (req: NextApiRequest, res: NextApiResponse) => {
   try {
@@ -22,4 +22,4 @@ const feedback = async (req: NextApiRequest, res: NextApiResponse) => {
   }
 }
 
-export default withSentry(feedback)
+export default feedback

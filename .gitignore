@@ -33,20 +33,4 @@ yarn-error.log*
 .env.build
 
 .vercel
-# Sentry
-.sentryclirc
 
-# Sentry
-.sentryclirc
-
-# Sentry
-.sentryclirc
-
-# Sentry
-.sentryclirc
-
-# Sentry
-.sentryclirc
-
-# Sentry
-.sentryclirc
