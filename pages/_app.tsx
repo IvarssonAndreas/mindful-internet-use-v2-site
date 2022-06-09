@@ -10,6 +10,8 @@ function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
+        <meta name="theme-color" content="#002040"/>
+        <meta name="apple-mobile-web-app-status-bar-style" content="#002040"/>
         <title>Mindful Internet Use</title>
         <meta
           name="description"
