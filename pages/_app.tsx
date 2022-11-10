@@ -4,19 +4,26 @@ import { CssBaseline, GlobalStyles, ThemeProvider } from '@mui/material'
 import theme from '../theme'
 import { globalStyles } from '../global-styles'
 
-
+const PreloadFontLink = ({ href }: { href: string }) => (
+  <link rel="preload" href={href} as="font" crossOrigin="" type="font/woff2" />
+)
 
 function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <meta name="theme-color" content="#002040"/>
-        <meta name="apple-mobile-web-app-status-bar-style" content="#002040"/>
+        <PreloadFontLink href="/fonts/v1/comfortaa-v34-latin-regular.woff2" />
+        <PreloadFontLink href="/fonts/v1/comfortaa-v34-latin-500.woff2" />
+        <PreloadFontLink href="/fonts/v1/comfortaa-v34-latin-700.woff2" />
+        <meta name="theme-color" content="#002040" />
+        <meta lang="en" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#002040" />
         <title>Mindful Internet Use</title>
         <meta
           name="description"
           content="A Chrome Extension that prevents mindless browsing"
-        />`
+        />
+        `
         <link
           rel="apple-touch-icon"
           sizes="180x180"
