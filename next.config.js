@@ -1,10 +1,8 @@
-// This file sets a custom webpack configuration to use your Next.js app
-// with Sentry.
-// https://nextjs.org/docs/api-reference/next.config.js/introduction
-// https://docs.sentry.io/platforms/javascript/guides/nextjs/
-
-
 const moduleExports = {
+  i18n: {
+    locales: ['en'],
+    defaultLocale: 'en',
+  },
   // Your existing module.exports
   reactStrictMode: true,
   async headers() {
@@ -21,6 +19,5 @@ const moduleExports = {
     ]
   },
 }
-
 
 module.exports = moduleExports

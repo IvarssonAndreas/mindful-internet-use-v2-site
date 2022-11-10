@@ -16,7 +16,6 @@ function App({ Component, pageProps }: AppProps) {
         <PreloadFontLink href="/fonts/v1/comfortaa-v34-latin-500.woff2" />
         <PreloadFontLink href="/fonts/v1/comfortaa-v34-latin-700.woff2" />
         <meta name="theme-color" content="#002040" />
-        <meta lang="en" />
         <meta name="apple-mobile-web-app-status-bar-style" content="#002040" />
         <title>Mindful Internet Use</title>
         <meta
