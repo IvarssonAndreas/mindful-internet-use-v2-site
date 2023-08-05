@@ -16,7 +16,7 @@ export const Rating = () => {
         <Typography fontWeight={'bold'} component={'span'} color={'primary'}>
           4.8
         </Typography>
-        <Typography component={'span'}> / 5 (33 reviews)</Typography>
+        <Typography component={'span'}> / 5 (42 reviews)</Typography>
       </Grid>
     </Grid>
   )
